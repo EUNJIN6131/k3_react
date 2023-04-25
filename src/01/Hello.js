@@ -1,5 +1,5 @@
 import logo from '../logo.svg';
-import './Hello.css';
+import '../01/Hello.css';
 const Hello = () => {
     let name = 'mary';
     let git = 'https://github.com/EUNJIN6131';
