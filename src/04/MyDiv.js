@@ -1,5 +1,5 @@
 import MyDivArticle from "./MyDivArticle";
-// import './MyDiv.css';
+import './MyDiv.css';
 
 const MyDiv = () => {
     

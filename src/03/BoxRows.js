@@ -1,4 +1,7 @@
-import {useState} from "react";
+import style from './Box.module.css';
+import { useState } from "react";
+
+
 
 // const BoxRows = (probs) => {
 const BoxRows = ({ mv }) => {
@@ -6,14 +9,23 @@ const BoxRows = ({ mv }) => {
     // const mvlist = [...probs.mv];
     // console.log("BoxRows", mv)
 
-    const[footTag, setFootTag] = useState('');
+
+    const [footTag, setFootTag] = useState('');
+
+
+
 
     const showMv = (row) => {
         console.log(row)
-        setFootTag(row.movieCd);
+        setFootTag("[" + row.movieCd + "]" + " " + row.movieNm + " " + ":" + " " + row.openDt);
     }
 
+
+
+
+    // 빈 배열  let ~ = [];
     let trTags = [];
+    // 배열에 10개 돌기
     for (let row of mv) {
         console.log(row.rank, row.movieNm, row.salesAmt, row.rankInten);
 
@@ -43,11 +55,29 @@ const BoxRows = ({ mv }) => {
             <tbody>
                 {trTags}
             </tbody>
-            <tfoot>
+            <tfoot >
                 <tr>
-                <td colSpan={4}>{footTag}</td>
+                    <td className={style.mah1} colSpan={4}>{footTag}</td>
+                    {/* <button onClick={() => { setFootTag(); }}
+                    >
+                    </button> */}
                 </tr>
             </tfoot>
+
+
+            {/* 
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot> */}
+
         </>
 
     )

@@ -1,3 +1,5 @@
-article > table {
+article  h1{
     text-align: center;
+    color: grey;
+    background-color: plum;
 }
