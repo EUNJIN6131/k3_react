@@ -1,0 +1,44 @@
+.dt {
+    display:inline-flex;
+    background-color: plum;
+    height: 50px;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    border-style:double;
+}
+
+.dt:hover {
+    background-color: aqua;
+
+}
+
+.dt1 {
+    display:inline-flex;
+    background-color: aqua;
+    height: 50px;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: center;
+    border-style:double;
+}
+
+
+.sp1 {
+    font-weight: bold;
+}
+
+.sp21 {
+    color: tomato;
+    font-weight: bold;
+}
+
+.sp23 {
+    color: blue;
+    font-weight: bold;
+}
+
+.sp22 {
+    color : rgb(77, 161, 77);
+    font-weight: bold;
+}
