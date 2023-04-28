@@ -12,9 +12,9 @@ const Frcst = () => {
     // cnKey.map((item) => console.log('cn',data[item]))
 
 
-    // object 만들기 오브젝트는 중괄호로 시작
+    // object 만들기 오브젝트는 중괄호로 시작 {키:값} 순서상관x
     let dtcn = {};
-    //dtkey배열만들기 배열은 대괄호로 시작
+    //dtkey      .map .filter배열만들기 배열은 대괄호로 시작 순서 o
     dtKey.map((item, idx) => dtcn[data[item]] = data[cnKey[idx]]);
     // console.log(dtcn)
 
