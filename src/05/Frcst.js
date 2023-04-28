@@ -12,14 +12,14 @@ const Frcst = () => {
     // cnKey.map((item) => console.log('cn',data[item]))
 
 
-    // object 만들기
+    // object 만들기 오브젝트는 중괄호로 시작
     let dtcn = {};
-    //dtkey배열만들기
+    //dtkey배열만들기 배열은 대괄호로 시작
     dtKey.map((item, idx) => dtcn[data[item]] = data[cnKey[idx]]);
     // console.log(dtcn)
 
     // let tempTag;
-    // state 변수 2단계 : 변수선언
+    // state 변수 2단계 : 변수선언 set함수
     const [bodyTag, setBodyTag] = useState();
     const [selDt, setselDt] = useState();
 
