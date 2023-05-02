@@ -8,6 +8,7 @@ const Taccident02 = ({ c2, sel1, sel2, setSel2 }) => {
         </li>
     );
 
+   
 
     return (
         <nav>
@@ -17,7 +18,11 @@ const Taccident02 = ({ c2, sel1, sel2, setSel2 }) => {
             <ul>
                 {btTag}
             </ul>
+            <header>
+           
+            </header>
         </nav>
+
     );
 }
 

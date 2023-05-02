@@ -63,6 +63,7 @@ const Taccident = () => {
 
                     <Taccident01 c1={c1} sel1={sel1} setSel1={setSel1} />
                     <Taccident02 c2={c2} sel1={sel1} sel2={sel2} setSel2={setSel2} />
+                    
                 </header>
 
             </article>
