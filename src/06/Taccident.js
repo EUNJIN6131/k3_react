@@ -1,7 +1,9 @@
 import dataTaccident from './dataTaccident.json';
 import Taccident01 from './Taccident01';
 import Taccident02 from './Taccident02';
+import Taccident03 from './Taccident03';
 import { useState, useEffect } from 'react';
+import style from './Taccident.module.css';
 
 // import 뒤에 data 단어 임의지정 가능
 const Taccident = () => {
@@ -31,7 +33,7 @@ const Taccident = () => {
 
     const c2 = data.map((item) => [item.사고유형_대분류, item.사고유형_중분류]);
     // console.log('c2', c2);
-    
+
 
     const [sel1, setSel1] = useState(0); //대분류 선택
     const [sel2, setSel2] = useState([]); //중분류 선택
@@ -41,11 +43,12 @@ const Taccident = () => {
         console.log(sel1);
        
     }, [sel1]);
-
     
     useEffect(() => {
         console.log(sel2);
-        let temp = data.map((item) => item.사고유형_대분류 === sel2[0] && item.사고유형_중분류 === sel2[1]);
+        let temp = data.filter((item) =>
+            item.사고유형_대분류 === sel2[0] && item.사고유형_중분류 === sel2[1]);
+      
         setSelData(temp[0]);
     }, [sel2])
    
@@ -63,9 +66,9 @@ const Taccident = () => {
 
                     <Taccident01 c1={c1} sel1={sel1} setSel1={setSel1} />
                     <Taccident02 c2={c2} sel1={sel1} sel2={sel2} setSel2={setSel2} />
-                    
+                   
                 </header>
-
+                  {selData &&  <Taccident03 selData={selData} /> }
             </article>
         </main>
 
