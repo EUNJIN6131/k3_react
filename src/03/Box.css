@@ -1,5 +1,7 @@
 article  h1{
     text-align: center;
-    color: grey;
-    background-color: plum;
+    color: yellow;
+    background-color: pink;
+    display: inline-flex;
+    font: bold;
 }

@@ -1,4 +1,6 @@
 import { useState, useRef, useEffect } from "react";
+import style from './MyRef.module.css';
+
 // useEffect는 조건부함수 
 const MyRef = () => {
 
@@ -14,14 +16,29 @@ const MyRef = () => {
 
     const addItem = (e) => {
         e.preventDefault();
-        itemArr.current = [...itemArr.current, txtref.current.value];
-        console.log("addItem", itemArr.current)
+        itemArr.current = [...itemArr.current, txtref.current.value]; //배열만들어주기   ...배열정렬
+        itemArr.current = [...new Set(itemArr.current)];  //중복제거
+        // itemArr.current = [...itemArr.current];
+        // setItemTag(itemArr.current.map((item,idx)=><div key={'pr'+idx}>{item}</div>));  //
+
+        let tempTag = itemArr.current.map(
+            (item, idx) => <span key = {'sp' +idx} className={style.sp1}>{item}</span>
+        );
+
+        setItemTag(tempTag)
+        console.log("addItem =", itemArr.current);
+        resetItem();
     }
+
 
     
     const resetItem = () => {
-        console.log("resetItem")
+        txtref.current.value = '';
+        txtref.current.focus();
+       
+        console.log("resetItem");
     }
+
 
 
     return (

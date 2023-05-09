@@ -58,8 +58,7 @@ const BoxRows = ({ mv }) => {
             <tfoot >
                 <tr>
                     <td className={style.mah1} colSpan={4}>{footTag}</td>
-                    {/* <button onClick={() => { setFootTag(); }}
-                    >
+                    {/* <button onClick={() => {setFootTag(); }}>
                     </button> */}
                 </tr>
             </tfoot>
