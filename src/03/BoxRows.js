@@ -9,7 +9,6 @@ const BoxRows = ({ mv }) => {
     // const mvlist = [...probs.mv];
     // console.log("BoxRows", mv)
 
-
     const [footTag, setFootTag] = useState('');
 
 
