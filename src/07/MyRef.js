@@ -52,7 +52,7 @@ const MyRef = () => {
                                 <input ref={txtref} type="text" id="txt1" name="txt1" required />
                             </div>
 
-                            <div><button onClick={(e) => addItem(e)}>등록</button>
+                            <div ><button onClick={(e) => addItem(e)}>등록</button>
                                 <button onClick={(e) => resetItem(e)}>취소</button></div>
                         </div>
                     </form>
