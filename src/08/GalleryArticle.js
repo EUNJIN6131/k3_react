@@ -10,8 +10,8 @@ const GalleryArticle = ({ item }) => {
 
 
         <article>
-            <header className='spneBox'>
-                <spne className='box1'>{item.galTitle}</spne>
+            <header className='spanBox'>
+                <span className='box1'>{item.galTitle}</span>
                 <span className='box2'>{item.galPhotographyLocation}</span>
             </header>
             <div>

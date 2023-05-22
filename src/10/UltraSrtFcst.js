@@ -1,4 +1,5 @@
-import FcstTable from "./FcstTable";
+import FcstTable from './FcstTable';
+import { useParams} from "react-router-dom";
 
 const UltraSrtFcst =() => {
 
@@ -6,7 +7,7 @@ const UltraSrtFcst =() => {
 
     return (
         <article>
-            <header>FcstMain</header>
+            <header>UltraSrtFcst</header>
             <FcstTable />
         </article>
 

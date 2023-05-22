@@ -7,7 +7,9 @@ import FcstNav from "./FcstNav";
 
 const Fcst = () => {
 
-
+    //const getData = () => {
+    //    let url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst?serviceKey=YbCtbs4SETsco3SXnbTi7otpks1RagK%2FQMCp5pQNZCbTxKz6Kewoc%2FQRvLrGDPjMoZPCe9ml2sJWVQsi01LmcA%3D%3D&numOfRows=60&pageNo=1&base_date=20230518&base_time=0630&nx=55&ny=127&dataType=json'
+    //}
 
     return (
 

@@ -1,16 +1,17 @@
-import FcstTable from "./FcstTable";
-const VilageFcst = () => {
+import FcstTable from './FcstTable';
+import { useParams} from "react-router-dom";
+
+const VilageFcst =() => {
 
 
 
     return (
         <article>
-            <header>FcstMain</header>
+            <header>VilageFcst</header>
             <FcstTable />
         </article>
 
     );
 }
 
-export default VilageFcst
-;
+export default VilageFcst;
