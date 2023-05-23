@@ -38,7 +38,7 @@ const UltraSrtFcst =() => {
 
     const ops = code.map((item) =>
     <option value={item["예보구분"]} key={item["예보구분"]} >
-        {item["항목명"]}
+        {item["항목명"] + "(" + item["항목값"] + ")" }
     </option>
     ).filter((item) => item.props.value === "초단기예보" );
    
