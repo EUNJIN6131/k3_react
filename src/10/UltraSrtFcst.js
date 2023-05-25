@@ -32,8 +32,13 @@ const UltraSrtFcst =() => {
             
             console.log(url)
         
-    }, [items]);
+    }, []);
 
+    useEffect(() => {
+        console.log('items', items)
+
+    }, [items])
+    
     
 
     const ops = code.map((item) =>

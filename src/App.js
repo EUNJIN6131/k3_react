@@ -8,7 +8,8 @@ import './App.css';
 //import Taccident from './06/Taccident';
 // import Frcst from './05/Frcst';
 // import MyRef from './07/MyRef';
-  import Fcst from './10/Fcst';
+  //import Fcst from './10/Fcst';
+  import Fcst from './101/Fcst';
 
 function App() {
   return (
