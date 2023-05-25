@@ -27,8 +27,8 @@ const FcstTable = ({items, gubun}) => {
     }, [gubun]);
 
 
-    useEffect(() => {
-    }, [items])
+    //  useEffect(() => {
+    //  }, [items])
 
     //사용자 정의 함수 : select onChange
     const showItem = (e) => {
@@ -37,8 +37,8 @@ const FcstTable = ({items, gubun}) => {
         if (items === undefined) return;
         //map 배열을 돈다. i는 배열 인덱스
         let temp = items.filter((i) => i.category === sel.current.value);
-        let tempcd = code.filter((i) => i["예보구분"] === gubun &&
-            i["항목값"] === sel.current.value
+        let tempcd = code.filter((i) => i.예보구분 === gubun &&
+            i.항목값 === sel.current.value
         );
         tempcd = tempcd[0];
 
@@ -48,7 +48,7 @@ const FcstTable = ({items, gubun}) => {
 
         temp = temp.map((i, idx) =>
             <tr key={i.category + idx}>
-                <td>{tempcd["항목명"]}</td>
+                <td>{tempcd.항목명}</td>
                 <td>{i.fcstDate}</td>
                 <td>{i.fcstTime}</td>
                 <td>

@@ -19,7 +19,7 @@ const UltraFcst = () => {
         url = url + '&nx=55';
         url = url + '&ny=127';
         url = url + `&dataType=json`;
-
+ 
         console.log(url)
 
         fetch(url)
@@ -27,17 +27,14 @@ const UltraFcst = () => {
             .then((data) => setItems(data.response.body.items.item))
             .catch((err) => console.log(err))
 
-})
+        }, []);
 
     useEffect(() => {
-        console.log('items', items)
+       console.log('items', items)
     }, [items])
 
     //사용자 정의 함수 : select onChange
-    const showItem = (e) => {
-
-    }
-
+    
     return (
     <>
        {items && <FcstTable items={items} gubun = '초단기예보' />} 

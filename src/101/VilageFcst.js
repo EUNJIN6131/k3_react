@@ -20,24 +20,21 @@ const VilageFcst = () => {
         url = url + '&ny=127';
         url = url + `&dataType=json`;
 
-        console.log(url)
-
+        
         fetch(url)
-            .then((resp) => resp.json())
-            .then((data) => setItems(data.response.body.items.item))
-            .catch((err) => console.log(err))
-
-})
+        .then((resp) => resp.json())
+        .then((data) => setItems(data.response.body.items.item))
+        .catch((err) => console.log(err))
+        
+        console.log(url)
+        }, []);
 
     useEffect(() => {
         console.log('items', items)
     }, [items])
 
     //사용자 정의 함수 : select onChange
-    const showItem = (e) => {
-
-    }
-
+    
     return (
     <>
        {items && <FcstTable items={items} gubun = '단기예보' />} 
