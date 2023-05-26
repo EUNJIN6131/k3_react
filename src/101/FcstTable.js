@@ -20,7 +20,7 @@ const FcstTable = ({items, gubun}) => {
         // map 은 전부 다 가져와서 배열을 돌고, filter은 가져오고 싶은 배열만 조건을 걸어서 가져온다
         let tempcd = code.filter((i) => i["예보구분"] === gubun)
         tempcd = tempcd.map((i, idx) =>
-            <option key={i["항목값"]} value={i["항목값"]}>{i["항목명"]}({i["항목값"]})</option>
+            <option key={i["항목값"]+idx} value={i["항목값"]}>{i["항목명"]}({i["항목값"]})</option>
         );
         setOpTags(tempcd);
         console.log('tempcd', tempcd);

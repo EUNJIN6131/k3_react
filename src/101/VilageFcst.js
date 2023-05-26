@@ -12,7 +12,7 @@ const VilageFcst = () => {
 
         let url = 'http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst?';
         url = url + 'serviceKey=YbCtbs4SETsco3SXnbTi7otpks1RagK%2FQMCp5pQNZCbTxKz6Kewoc%2FQRvLrGDPjMoZPCe9ml2sJWVQsi01LmcA%3D%3D';
-        url = url + '&numOfRows=60';
+        url = url + '&numOfRows=800';
         url = url + '&pageNo=1';
         url = url + '&base_date=20230525';
         url = url + '&base_time=0500';

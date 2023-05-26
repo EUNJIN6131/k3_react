@@ -45,7 +45,7 @@ const FcstMain = () => {
     }
 
     const getSel = () => {
-        let temp = xy.filter((item) => item["행정구역코드"] ===parseInt(sel1.current.value))[0] ;
+        let temp = xy.filter((item) => item["행정구역코드"] === parseInt(sel1.current.value))[0] ;
         console.log(temp);
         setArea(temp["1단계"]);
         setX(temp["격자 X"]);
