@@ -9,8 +9,9 @@ import './App.css';
 // import Frcst from './05/Frcst';
 // import MyRef from './07/MyRef';
   //import Fcst from './10/Fcst';
-  //import Fcst from './101/Fcst';
-  import Fcst from './101/Fcst';
+  // //import Fcst from './101/Fcst';
+  // import Fcst from './101/Fcst';
+import CodeView from './102/CodeView';
 
 function App() {
   return (
@@ -24,7 +25,9 @@ function App() {
     // <Gallery />
     // <RouteMain />
       //<Fcst/>
-      <Fcst />
+      // <Fcst />
+    <CodeView />
+      // <h1>App</h1>
   );
 }
 
