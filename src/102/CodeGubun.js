@@ -18,7 +18,7 @@ const CodeGubun = () => {
     return (
         <main className="container">
             <article>
-        {/* onclick은 박스를 눌릴 때마다 호출x  // onChange는 값이 바뀔 때마다 호출 값이 바뀌지 않으면 호출 x */}
+        {/* onclick은 박스를 눌릴 때마다 호출  // onChange는 값이 바뀔 때마다 호출 값이 바뀌지 않으면 호출 x */}
            
            {/* <form>
                 <select id = "sel" name ="sel" onClick={selItem}>

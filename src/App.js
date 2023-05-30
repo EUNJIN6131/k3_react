@@ -11,7 +11,10 @@ import './App.css';
   //import Fcst from './10/Fcst';
   // //import Fcst from './101/Fcst';
   // import Fcst from './101/Fcst';
-import CodeView from './102/CodeView';
+// import CodeView from './102/CodeView';
+// import Cnt3 from './11/Cnt3';
+import Cnt3 from './111/Cnt3'
+
 
 function App() {
   return (
@@ -26,9 +29,12 @@ function App() {
     // <RouteMain />
       //<Fcst/>
       // <Fcst />
-    <CodeView />
+    // <CodeView />
       // <h1>App</h1>
-  );
+      <Cnt3 />
+
+
+      );
 }
 
 export default App;
